@@ -1,0 +1,39 @@
+#shopping cart
+cart={}
+while True:
+    print("----MENU----")
+    print("1--Add product")
+    print("2--update product")
+    print("3--remove product")
+    print("4--list the product")
+    print("5--exit")
+    opt=int(input("enter the option"))
+    if opt==1:
+        a=input("product name")
+        if a in cart:
+            print(f'{a} exist cart')
+        else:
+            b=int(input('quantity'))
+            cart[a]=b
+            print("product added")
+    elif opt==2:
+        a=input("product name")
+        if a in cart:
+            b=int(input("new qty"))
+            cart[a]=b
+            print("qut updated")
+        else:
+            print(f'{a} not exists')
+    elif opt==3:
+        a=input("product name")
+        if a in cart:
+            del cart[a]
+            print("product removed")
+        else:
+            print(f'{a} not exists')
+    elif opt==4:
+        for a,b in cart.items():
+            print(f'{a} \t {b}')
+    elif opt==5:
+        break
+print(cart)
