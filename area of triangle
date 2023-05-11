@@ -1,0 +1,10 @@
+#area of triangle
+def values():
+    global h,b
+    h=float(input("enter the height :"))
+    b=float(input("enter the breadth :"))
+def area():
+    a=0.5*h*b
+    print(f'area of triange is {a}')
+values()
+area()
