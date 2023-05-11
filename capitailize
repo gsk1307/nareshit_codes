@@ -1,0 +1,19 @@
+#capitalize
+str1a=input("enter any string :")
+gsk=str1.split()
+sai=[]
+for s in gsk:
+    s1='"'
+    for i in range(len(s)):
+        if i==0 and s[i]>='a' and s[i]<='z':
+            s1=s1+chr(ord(s[i]-32))
+        elif i==0:
+            s1=s1+s[i]
+        elif s[i]>='A' and s[i]<='Z':
+            s1=s1+chr(ord(s[i]+32))
+        else:
+            s1=s1+s[i]
+    sai.append(s1)
+str2="".join(sai)
+print(str1)
+print(str2)
