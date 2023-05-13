@@ -1,0 +1,12 @@
+#armstrong number
+num=int(input("enter the 4 digit number :"))
+a=num
+s=0
+while num>0:
+    r=num%10
+    s=s+(r**4)
+    num=num//10
+if s==a:
+    print(f'{a} is a armstrong number')
+else:
+    print(f'{a} is not a armstrong number')
