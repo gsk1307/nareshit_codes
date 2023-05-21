@@ -1,0 +1,10 @@
+lst1=[]
+lst2=[]
+s1=set(lst1)
+s2=set(lst2)
+s3=s1.intersection(s2)
+print(s3)   #this s3 in the form of set -->{}
+for i in s3:
+    lst1.remove(i)
+    lst2.remove(i)
+print(s3,lst1,lst2,sep="\n")
