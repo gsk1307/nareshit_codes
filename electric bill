@@ -1,0 +1,12 @@
+#electric bill
+def main():
+    units=float(input("enter the units :"))
+    if units<=100:
+        print("no chareges")
+    elif units>100 and units<=200:
+        charges=(units-100)*5
+        print(f"{charges} rupees to be paid")
+    else:
+        charges=0+500+(units-200)*10
+        print(f'{charges} rupees to be paid')
+main()
