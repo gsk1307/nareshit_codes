@@ -1,0 +1,16 @@
+def stars(f):
+    def newdisplay():
+        print("*"*6)
+        f()
+        print("*"*4)
+    return newdisplay
+@stars
+def info():
+    print("printing information")
+@stars
+def display():
+    print("welcome")
+def main():
+    display()
+    info()
+main()
