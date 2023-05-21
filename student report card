@@ -1,0 +1,20 @@
+#student report card
+name=input("enter the name of the student :")
+n=int(input("number of subjects :"))
+marks=[]
+for i in range(n):
+    m=int(input("enter the marks :"))
+    marks.append(m)
+total=sum(marks)
+avg=total/n
+result="pass"
+for m in marks:
+    if m<40:
+        result="fail"
+print(f"name is {name}")
+print(f"marks are {marks}")
+print(f"total is {total}")
+print(f"average marks are {avg}")
+print(f"average marks are {avg:.3f}")
+print(f"result is {result}")
+    
