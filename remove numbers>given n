@@ -1,0 +1,11 @@
+#to remove elements larger than given value
+n=int(input("enter number of values :"))
+lst=[]
+for i in range(n):
+    value=int(input("enter the value :"))
+    lst.append(value)
+value=int(input("enter your value from the list :"))
+lst.sort()      #sorting  (ascending order)
+a=lst.index(value)
+del lst[a+1:]       #here we are using slicing to delete or remove
+print(lst)
